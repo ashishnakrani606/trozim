@@ -20,11 +20,17 @@
                 font-family: 'Inter', sans-serif;
             }
         </style>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
         @stack('styles')
     </head>
     <body class="antialiased bg-[#fafafa] dark:bg-[#161616] text-gray-600 min-h-full flex flex-col application application-ltr overflow-x-hidden overflow-y-scroll ">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-16 space-y-8 min-h-screen">
         @yield('content')
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
         @stack('scripts')
     </body>
